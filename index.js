@@ -30,15 +30,17 @@ client.on("message", (message) => {
     if (media_link.includes("www.mediafire.com")) {
       if (media_link.includes("https://")) {
         message.reply("Sending, Please Wait...");
-        var me = "http://amosayomide05.orgfree.com/mediafire/mediafire.php?url=" + media_link;
-        
-        request(me, options, (error, res, body) => {
+
+        var mediaf = "http://amosayomide05.orgfree.com/mediafire/mediafire.php?url=" + media_link;
+        //Check mediafire.php for the link up
+
+        request(mediaf, options, (error, res, body) => {
           if (error) {
             return console.log(error)
           };
 
           if (!error && res.statusCode == 200) {
-            var me = body[0].file;
+            var mediaf = body[0].file;
             let mimetype;
             (async () => {
               const attachment = await axios.get(me, {
@@ -56,9 +58,9 @@ client.on("message", (message) => {
       else {
         message.reply("Invalid Mediafire Link! Use https!");
       }
-    }
- });
     else {
       message.reply("Invalid Mediafire Link! Don't forget to add www!");
     }
   }
+}
+});
