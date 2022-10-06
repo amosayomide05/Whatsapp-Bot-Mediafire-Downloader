@@ -1,0 +1,31 @@
+{
+  "name": "Whatsapp Mediafire Downloader",
+  "version": "0.1.0",
+  "description": "A Whatsapp Bot to download mediafire links and send it as document to you in whatsapp using NodeJS",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Amos Ayomide",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "puppeteer": "^13.7.0",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "latest",
+    "request": "2.88.0",
+    "axios": "latest"
+  },
+  "homepage": "https://github.com/amosayomide05/Whatsapp-Bot-Mediafire-Downloader/fplbot",
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amosayomide05/Whatsapp-Bot-Mediafire-Downloader/fplbot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/amosayomide05/Whatsapp-Bot-Mediafire-Downloader/issues"
+  }
+}
