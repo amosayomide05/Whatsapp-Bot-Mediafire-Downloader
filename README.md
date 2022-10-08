@@ -3,7 +3,6 @@
 A Whatsapp Bot to download mediafire links and send it as document to you in whatsapp using NodeJS <br>
    
 </p>
-![](https://komarev.com/ghpvc/?username=WhatsappBotMediafireDownloader&label=REPO+VIEWS&style=flat-square)
 <h2> Deployment Method Using Github Actions:</h2>
 ✧ Fork this repo.<br>
 ✧ Go to Github Action. <br>
